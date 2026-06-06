@@ -1,0 +1,5 @@
+# Deep Learning as an Optimal Control Problem: A ResNet Implementation
+
+Formulación e implementación del entrenamiento de una red neuronal residual (ResNet) interpretada como un problema de control óptimo discreto aplicable a la clasificación binaria. Modelamiento de la arquitectura profunda como la discretización temporal de un sistema dinámico controlado, abordando el aprendizaje desde la perspectiva de la minimización del Hamiltoniano asociado.
+
+Derivación y resolución analítica de las ecuaciones de estado y ecuaciones adjuntas mediante la aplicación del Principio del Máximo de Pontryaguin. Implementación algorítmica del sistema de optimización no lineal utilizando el lenguaje Julia, apoyado en el modelador `JuMP` y el solver `Ipopt`. Integración de aproximaciones suaves para la función de activación ReLU, garantizando la continuidad de las derivadas requeridas por el optimizador. Demostración empírica de la evolución del espacio de características a través de las capas ocultas (hasta 35 niveles de profundidad), logrando la completa separabilidad lineal de los datos y una reducción de la función de costos.
